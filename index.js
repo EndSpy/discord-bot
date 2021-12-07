@@ -13,7 +13,7 @@ client.on('message', message => {
 	if (message.content === `hi`) {
 		message.channel.send('Hello');
 	} else if (message.content === `${prefix}help`) {
-		message.channel.send('commands:\nhi --> hello\n!play (starts with) --> games\n!server --> server name, total members\n!user-info --> name, id');
+		message.channel.send('commands:\nhi --> hello\n!play (starts with) --> games\n!server --> server name, total members\n!user-info --> name, id\n!clear (amount) ---> delete mass amount of messages');
 	} else if (message.content.startsWith(`${prefix}play`)) {
 		message.channel.send('games'); 
 	} else if (message.content === `${prefix}server`) {
